@@ -31,12 +31,18 @@ Das interaktive Dashboard zur Visualisierung der Ergebnisse wurde in **Data Stud
 ### Dashboard-Funktionalität & Beschreibung
 Das in Looker Studio entwickelte interaktive Dashboard dient der detaillierten visuellen Analyse der Geschäftstätigkeit von *GreenGarten* und wird von allen relevanten Abteilungen genutzt. Es gliedert sich in zwei Hauptbereiche (Tabs):
 
+![Dashboard Vorschlag Tab 1](screenshots/tab1.png)
+*(Beispiel: Ansicht der Umsatz- & Produktanalyse)*
+
 **1. Tab: Umsatz- & Produktanalyse**
 * **KPI-Header:** Zeigt globale Kennzahlen (Umsatz, Absatz, Marketingbudget) mit flexibler Filteroption zur Jahresauswahl (z. B. 2025: ca. 3,7 Mio. € Umsatz, knapp 134.000 Absatz, über 645.000 € Marketingbudget).
 * **Umsatzverteilung & Ansicht-Filter:** Ein Balkendiagramm, bei dem über das Dropdown-Menü drei Darstellungsformen gewählt werden können: nach **Kategorien**, **Herstellern** (z. B. Spitzenreiter *Hortica*) oder **Preislagen** (wobei das Basissegment unter 5 % ausmacht).
 * **Heatmap (Kategorien & Hersteller):** Eine Kreuztabelle, die mithilfe einer Farbcodierung (dunkle Töne für maximalen Umsatz, helle für geringeren) die Umsatzverteilung zwischen Lieferanten und Warengruppen visualisiert (z. B. *Hortica* führt bei Bewässerung, *Biogrün* und *Floraplan* bei Werkzeugen).
 * **Top-5 & Bottom-5 Produkte:** Tabellen mit Produktinformationen sowie unserem Preis im Vergleich zum Konkurrenzpreis (hilfreich für die Marketingabteilung). Über ein Dropdown-Menü kann die Kennzahl flexibel zwischen **Umsatz (€)** und **Absatz in Stück** (besonders wichtig für den Einkauf) umgeschaltet werden.
 * **Interaktive Kreuzfilterung:** Das Dashboard fungiert vollständig als interaktiver Filter – durch Anklicken spezifischer Zellen (z. B. Kombination aus *Hortica* und *Bewässerung*) werden die Daten dynamisch gefiltert.
+
+![Saisonalität](screenshots/tab2.png)
+*(Beispiel: Ansicht der Saisonalitätsanalyse)*
 
 **2. Tab: Saisonalität**
 * **Saisonalitätsanalyse nach Kategorien:** Zwei detaillierte Liniendiagramme zur Untersuchung des Saisonverlaufs nach Umsatz (€) und Absatz (Stk.).
@@ -53,3 +59,4 @@ Das in Looker Studio entwickelte interaktive Dashboard dient der detaillierten v
 * `raw/` – Ursprüngliche Rohdaten
 * `interim/` – Bereinigte Daten (`verkaufe_clean.csv`)
 * `src/` – Jupyter Notebooks (`data_cleaning.ipynb`, `eda.ipynb`)
+* `screenshots/` – Ansichten des Looker/Data Studio Dashboards (`tab1.png`, `tab2.png`)
