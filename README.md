@@ -31,7 +31,7 @@ Das interaktive Dashboard zur Visualisierung der Ergebnisse wurde in **Data Stud
 ### Dashboard-Funktionalität & Beschreibung
 Das in Looker Studio entwickelte interaktive Dashboard dient der detaillierten visuellen Analyse der Geschäftstätigkeit von *GreenGarten* und wird von allen relevanten Abteilungen genutzt. Es gliedert sich in zwei Hauptbereiche (Tabs):
 
-![Dashboard Vorschlag Tab 1](screenshots/tab1.png)
+![Dashboard Vorschlag Tab 1](screenshots/tab1.png?v=2)
 *(Beispiel: Ansicht der Umsatz- & Produktanalyse)*
 
 **1. Tab: Umsatz- & Produktanalyse**
