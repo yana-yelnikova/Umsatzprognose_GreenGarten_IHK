@@ -17,18 +17,16 @@ Bisher plant der Einkauf Bestellmengen und Lagerbestände manuell über Excel-Vo
 *(Die Datenbereinigung und der Bereich Machine Learning wurden von anderen Teammitgliedern bearbeitet).*
 
 ## 📈 Zentrale Ergebnisse der EDA
-* **Umsatzstrukturen:** Werkzeuge, Pflanzen und Bewässerungssysteme machen über 82 % des Gesamtumsatzes aus. Das Premium-Segment (> 35 €) dominiert mit 56 %.
-* **Saisonalität:** Stark ausgeprägter Peak im Frühsommer (Mai/Juni) und Jahrestief im Januar, getrieben durch die Hauptkategorien.
-* **Marketingkorrelation:** Hoher Zusammenhang ($r = 0,96$) zwischen Werbeausgaben und Umsatz, wobei das Budget als Spiegelbild der Saisongestaltung dient.
+* **Sortiment & Preisstruktur:** Das Sortiment umfasst 600 Produkte in 6 Kategorien und bei 6 Lieferanten (darunter 181 Pflanzen und 115 Werkzeuge). Die Preisspanne reicht von 1,50 € bis 143,50 €. Gestützt auf die Quartile (Q1 bei 8,13 €, Median bei 20,64 €, Q3 bei 34,66 €) wurden drei klare Preissegmente definiert: Basisprodukte reichen bis 10 €, Standardprodukte bis 35 €, und alles darüber fällt in das Premium-Segment. Statistische Ausreißer (zwei bei Werkzeugen, einer bei Pflanzen) spiegeln exklusive Spezialprodukte wider.
+* **Umsatzstrukturen & Kategorien:** Werkzeuge, Pflanzen und Bewässerungssysteme machen über 82 % des Gesamtumsatzes aus. Preislich dominiert das Premium-Segment (> 35 €) mit 56 % des Umsatzes, dicht gefolgt vom Standard-Segment mit knapp 40 % (Basisprodukte liegen unter 5 %). Bewässerung und Werkzeuge sind die teuersten Kategorien mit der größten Preisspanne, während Saatgut die günstigste Kategorie bildet.
+* **Hersteller-Performance:** *Hortica* nimmt mit über 21 % am Gesamtumsatz die Spitzenposition ein (allein im Bereich Bewässerung generiert Hortica knapp 10 % des Gesamtumsatzes). *Vivero* belegt den letzten Platz (knapp 14 %), während *BioGruen* und *Floraplan* wesentliche Umsätze im Werkzeugsegment beisteuern.
+* **Saisonalität:** Stark ausgeprägter Saisonverlauf mit einem Peak im Frühsommer (Mai/Juni) und Jahrestief im Januar, getrieben vor allem durch die Hauptkategorien.
+* **Marketingkorrelation:** Ein sehr hoher Zusammenhang ($r = 0,96$) zwischen Werbeausgaben und Umsatz zeigt, dass das Budget synchron zum Saisonauftakt verläuft. Dies beweist keinen direkten Werbeeffekt, sondern zeigt, dass das Unternehmen historische Werte nutzt, um starke Saisons gezielt einzuplanen und den Vorsprung vor der Konkurrenz zu halten.
 
-## 📂 Repository-Struktur
-* `raw/` – Ursprüngliche Rohdaten
-* `interim/` – Bereinigte Daten (`verkaufe_clean.csv`)
-* `src/` – Jupyter Notebooks (`data_cleaning.ipynb`, `eda.ipynb`)
 
 ## 🖥️ Dashboard
-Das interaktive Dashboard zur Visualisierung der Ergebnisse wurde in **Looker Studio** erstellt:
-👉 [Looker Studio Dashboard öffnen](https://datastudio.google.com/reporting/9622854a-b558-40ac-840c-e09c26d4eca7)
+Das interaktive Dashboard zur Visualisierung der Ergebnisse wurde in **Data Studio (Looker Studio)** erstellt:
+👉 [Data Studio Dashboard öffnen](https://datastudio.google.com/reporting/9622854a-b558-40ac-840c-e09c26d4eca7)
 
 ### Dashboard-Funktionalität & Beschreibung
 Das in Looker Studio entwickelte interaktive Dashboard dient der detaillierten visuellen Analyse der Geschäftstätigkeit von *GreenGarten* und wird von allen relevanten Abteilungen genutzt. Es gliedert sich in zwei Hauptbereiche (Tabs):
@@ -43,3 +41,15 @@ Das in Looker Studio entwickelte interaktive Dashboard dient der detaillierten v
 **2. Tab: Saisonalität**
 * **Saisonalitätsanalyse nach Kategorien:** Zwei detaillierte Liniendiagramme zur Untersuchung des Saisonverlaufs nach Umsatz (€) und Absatz (Stk.).
 * **Erkenntnisse:** Zeigt auf, dass die Top-3-Kategorien die Haupt-Saisonpeaks im Umsatz ausmachen, während beim Absatz (Stk.) beispielsweise Saatgut im April einen extremen Peak aufweist, was den hohen Anteil des Basissegments bei Saatgut im Vergleich zum Premiumsegment (Werkzeuge/Bewässerung) widerspiegelt.
+
+## 🛠️ Tech Stack
+* **Entwicklungsumgebung:** VS Code, Jupyter Notebook (`src/eda.ipynb`)
+* **Programmiersprache:** Python
+* **Bibliotheken:** Pandas, NumPy, Matplotlib, Seaborn
+* **Dashboard:** Google Data Studio
+* **Versionsverwaltung:** Git & GitHub
+
+## 📂 Repository-Struktur
+* `raw/` – Ursprüngliche Rohdaten
+* `interim/` – Bereinigte Daten (`verkaufe_clean.csv`)
+* `src/` – Jupyter Notebooks (`data_cleaning.ipynb`, `eda.ipynb`)
